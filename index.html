@@ -570,7 +570,7 @@
       <span class="panel-title">Números chamados</span>
       <span class="drawn-count" id="drawn-label">0 / —</span>
     </div>
-    <div class="numbers-grid">
+    <div class="numbers-grid" id="numbers-grid-wrapper">
       <div class="grid" id="grid"></div>
     </div>
   </div>
@@ -754,7 +754,8 @@
     const cell = document.getElementById('cell-' + num);
     if (cell) {
       cell.className = 'num-cell current';
-      cell.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      const grid = document.getElementById('numbers-grid-wrapper');
+      if (grid) grid.scrollTop = Math.max(0, cell.offsetTop - grid.clientHeight / 2);
     }
 
     refreshUI();
