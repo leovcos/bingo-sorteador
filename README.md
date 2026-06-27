@@ -5,44 +5,6 @@ Funciona direto no navegador com persistência via `localStorage`.
 
 ---
 
-## 🚀 Deploy no GitHub Pages (5 minutos)
-
-### Opção 1 — Upload direto pelo site (mais fácil)
-
-1. Acesse [github.com](https://github.com) e faça login
-2. Clique em **New repository**
-3. Nomeie como `bingo` (ou qualquer nome)
-4. Marque **Public** e clique em **Create repository**
-5. Clique em **uploading an existing file**
-6. Arraste o arquivo `index.html` para a área de upload
-7. Clique em **Commit changes**
-8. Vá em **Settings → Pages**
-9. Em "Source", selecione **Deploy from a branch → main → / (root)**
-10. Clique em **Save**
-
-Aguarde 1-2 minutos. Seu sorteador estará em:  
-`https://SEU_USUARIO.github.io/bingo/`
-
----
-
-### Opção 2 — Via Git (linha de comando)
-
-```bash
-# Clone ou entre na pasta do projeto
-git init
-git add index.html
-git commit -m "feat: sorteador de bingo"
-
-# Crie o repositório no GitHub e conecte
-git remote add origin https://github.com/SEU_USUARIO/bingo.git
-git push -u origin main
-
-# Ative o GitHub Pages nas configurações do repositório
-# Settings → Pages → Deploy from branch → main / root
-```
-
----
-
 ## 🎮 Como usar
 
 1. Acesse a URL do seu GitHub Pages
