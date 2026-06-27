@@ -754,8 +754,7 @@
     const cell = document.getElementById('cell-' + num);
     if (cell) {
       cell.className = 'num-cell current';
-      const grid = document.getElementById('numbers-grid-wrapper');
-      if (grid) grid.scrollTop = Math.max(0, cell.offsetTop - grid.clientHeight / 2);
+
     }
 
     refreshUI();
